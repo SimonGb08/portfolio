@@ -177,10 +177,27 @@ h2, h3 {
     }
 }
 
-
-
 .center-childs {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.button-project {
+    box-sizing: border-box;
+    background-color: rgb(23, 155, 243);
+    color: rgb(0, 0, 0);
+    appearance: auto;
+    user-select: none;
+    white-space: pre;
+    align-items: flex-start;
+    border-radius: 8px;
+    text-align: center;
+    cursor: default;
+    width: 10%;
+    margin-left: 100px;
+    margin-inline: 100px;
+    position: relative;
+    height: 59px;
+    border: none;
 }
