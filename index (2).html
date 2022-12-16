@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes projets</title>
+    <link rel="stylesheet" href="./style (2).css">
+    <link rel="shortcut icon" href="./logo.png">
+</head>
+
+<body>
+    <section id="projects" class="projects">
+        <h2 class="projects__title">Mes Projets</h2>
+        <section id="cards" class="cards">
+            <div class="card">
+                <h3 class="card__title">Titre du projet</h3>
+                <img class="cart__img" src="téléchargement.jpg" alt="Image Projet JavaScript">
+                <p class="card__text">Ce projet est ...</p>
+            </div>
+            <div class="card">
+                <h3 class="card__title">Titre du projet</h3>
+                <img class="cart__img" src="téléchargement.jpg" alt="Image Projet JavaScript">
+                <p class="card__text">Ce projet est ...</p>
+            </div>
+            <div class="card">
+                <h3 class="card__title">Titre du projet</h3>
+                <img class="cart__img" src="téléchargement.jpg" alt="Image Projet JavaScript">
+                <p class="card__text">Ce projet est ...</p>
+            </div>
+        </section>
+    </section>
+    <form>
+        <div class="center-childs">
+            <button class="new-project-sup__button" type="submit">Supprimer les projets</button>
+        </div>
+    </form>
+    <section id="new-project" class="new-project">
+        <h2 class="new-project__titre">Ajouter un projet à mon portefolio</h2>
+        <form id="new-project-form" class="new-project-form" onsubmit="handleSubmit(event)">
+            <div class="new-project-form__input-group">
+                <label for="project-title">Titre du projet</label>
+                <input type="text" name="project-title" id="project-title">
+            </div>
+            <div class="new-project-form__input-group">
+                <label for="project-img-link">Lien vers une image en ligne</label>
+                <input type="text" name="project-img-link" id="project-img-link">
+            </div>
+            <div class="new-project-form__input-group new-project-form__input-group--textarea">
+                <label for="project-text">Description du projet</label>
+                <textarea name="project-text" id="project-text" rows="10"></textarea>
+            </div>
+            <button class="new-project__button" type="submit">Créer le projet</button>
+        </form>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
